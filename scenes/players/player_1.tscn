@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://gnmli6bs7oh0"]
+[gd_scene load_steps=2 format=3 uid="uid://gnmli6bs7oh0"]
+
+[ext_resource type="Texture2D" uid="uid://c5xmbica6yn1c" path="res://scenes/players/circle.png" id="1_u1ork"]
 
 [node name="Player1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_u1ork")
