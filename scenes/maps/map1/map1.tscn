@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5yh1xrbbtpsx"]
+
+[ext_resource type="Texture2D" uid="uid://buv35nqt1m3ht" path="res://scenes/maps/map1/generic_platformer_tiles.png" id="1_tc6fw"]
+[ext_resource type="Texture2D" uid="uid://cg44prbtujckx" path="res://icon.svg" id="1_w1rr5"]
+[ext_resource type="PackedScene" uid="uid://gnmli6bs7oh0" path="res://scenes/players/player_1.tscn" id="2_t0uns"]
+
+[node name="Map1" type="Node2D"]
+
+[node name="Map1_BG" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(1.80251, 1.35491)
+texture = ExtResource("1_tc6fw")
+region_enabled = true
+region_rect = Rect2(0.615021, 33.811, 638.88, 479.16)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Map1_BG"]
+position = Vector2(240.776, 115.506)
+scale = Vector2(0.33, 0.438)
+texture = ExtResource("1_w1rr5")
+
+[node name="Player1" parent="Map1_BG" instance=ExtResource("2_t0uns")]
+position = Vector2(-219.694, 125.839)
+scale = Vector2(0.554783, 0.738059)
