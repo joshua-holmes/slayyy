@@ -8,7 +8,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var player: Node2D = get_node(".")
-	print(player.get_meta("speed"))
-	player.position[0] += (player.get_meta("speed") * delta)
-	
+	var speed = get_meta("speed")
+	var direction = Input.get_vector("left", "right", "up", "down")
+	position += (direction * delta * speed)
