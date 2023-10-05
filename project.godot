@@ -11,9 +11,18 @@ config_version=5
 [application]
 
 config/name="Slayyy"
-run/main_scene="res://scenes/maps/map1/map1.tscn"
+run/main_scene="res://scenes/maps/map_paper/map_paper.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 

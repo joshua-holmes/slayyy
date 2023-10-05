@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5yh1xrbbtpsx"]
+
+[ext_resource type="Texture2D" uid="uid://bknt2vmk4peh" path="res://scenes/maps/map_paper/map_paper_bg.jpg" id="1_d2px3"]
+[ext_resource type="Texture2D" uid="uid://cg44prbtujckx" path="res://icon.svg" id="2_vqvo6"]
+[ext_resource type="PackedScene" uid="uid://gnmli6bs7oh0" path="res://scenes/players/player1.tscn" id="3_b64y1"]
+
+[sub_resource type="GDScript" id="GDScript_sx1or"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="MapScenePaper" type="Node2D"]
+script = SubResource("GDScript_sx1or")
+
+[node name="MapBG" type="Sprite2D" parent="."]
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_d2px3")
+centered = false
+region_rect = Rect2(1772.9, 1155.69, 1139.25, 725.323)
+
+[node name="Player1" parent="." instance=ExtResource("3_b64y1")]
+position = Vector2(299.998, 825.003)
+scale = Vector2(1.66666, 1.66666)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(1683.33, 801.666)
+scale = Vector2(0.991381, 0.989086)
+texture = ExtResource("2_vqvo6")

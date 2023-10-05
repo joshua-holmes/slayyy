@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buv35nqt1m3ht"
-path="res://.godot/imported/generic_platformer_tiles.png-ce5e9cea82ce0e1be1aed16abeb6f61b.ctex"
+uid="uid://bknt2vmk4peh"
+path="res://.godot/imported/map_paper_bg.jpg-01d3f8973e66e40258d1b3a2b76f74e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/maps/map1/generic_platformer_tiles.png"
-dest_files=["res://.godot/imported/generic_platformer_tiles.png-ce5e9cea82ce0e1be1aed16abeb6f61b.ctex"]
+source_file="res://scenes/maps/map_paper/map_paper_bg.jpg"
+dest_files=["res://.godot/imported/map_paper_bg.jpg-01d3f8973e66e40258d1b3a2b76f74e4.ctex"]
 
 [params]
 
